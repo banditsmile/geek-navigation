@@ -2,6 +2,7 @@
 
 > 独立开发者的导航站!
 
+<<<<<<< HEAD
 预览: [➡️ http://navigation.zcbing.cn/](http://navigation.zcbing.cn/)
 
 ## V1.0 版本
@@ -87,23 +88,41 @@ location / {
 运行爬虫文件`node reptile.js`,确保你已经开启了本地 Mongodb 数据库，就可以爬导航到本地的数据库了
 
 ### 3. 本地运行
+=======
+## JSON本地静态版
+>>>>>>> c2cb2ef4349e2d1d7ad37d9516f4edb4d874777c
 
 ```js
-// 1. 下载代码
-git clone git@github.com:geekape/geek-navigation.git
+// 1. 下载源码
+git clone https://github.com/geekape/geek-navigation/tree/json-navigation
 
-// 2. 本地安装包
-npm i 或者 cnpm i
+// 2.安装依赖,进入根目录
+npm install 或 cnpm install
 
+<<<<<<< HEAD
 // 3.假设已启动mongodb，启动本地服务器
 nodemon server/app.js
 
 // 4. 运行项目
+=======
+// 3. 运行
+>>>>>>> c2cb2ef4349e2d1d7ad37d9516f4edb4d874777c
 npm run serve
 
-// 5. 预览项目
-http://localhost:8080
+// 4. 查看效果
+打开localhost:8080
 ```
+<<<<<<< HEAD
+=======
+
+## 常见问题
+1. 添加导航
+所有导航数据在根目录下`public/nav.json`里，在某个分类下新增sites数据就可以了，看结构就知道的。（静态版还是比较麻烦，你可以尝试Mongodb数据存储版，可在线提交网站，后台管理所有网站，添加删除操作都方便,[点我跳转](https://github.com/geekape/geek-navigation/tree/vue2)）
+
+2.项目部署
+将`dist`目录下的所有文件上传到网站根目录即可
+
+>>>>>>> c2cb2ef4349e2d1d7ad37d9516f4edb4d874777c
 
 ## 前端交流学习
 
